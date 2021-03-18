@@ -32,12 +32,6 @@ app = Flask(__name__)
 # Model saved with Keras model.save()
 MODEL_PATH = 'C:/Users/ADMIN/keras-flask-deploy-webapp/models/model_finetune_40epoch_Efficientnet_focalloss.h5'
 
-class SwishActivation(Activation):
-    
-    def __init__(self, activation, **kwargs):
-        super(SwishActivation, self).__init__(activation, **kwargs)
-        self.__name__ = 'swish_act'
-
 def swish_act(x, beta = 1):
     return (x * sigmoid(beta * x))
 
