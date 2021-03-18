@@ -8,3 +8,4 @@ Werkzeug==0.16.0
 gunicorn==19.9.0
 tensorflow-addons==0.12.1
 Keras==2.4.3
+efficientnet==1.1.1
