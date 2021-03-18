@@ -13,8 +13,6 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.layers import Activation
 
-from efficientnet.tfkeras import EfficientNetB0
-
 from tensorflow.keras.backend import sigmoid
 
 from tensorflow_addons.losses import SigmoidFocalCrossEntropy
