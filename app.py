@@ -8,24 +8,20 @@ from gevent.pywsgi import WSGIServer
 
 # TensorFlow and tf.keras
 import tensorflow as tf
-from tensorflow import keras
-
 from tensorflow.keras.applications.imagenet_utils import preprocess_input, decode_predictions
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
-import tensorflow as tf
-from tensorflow import keras
 from tensorflow.keras import Model
 from tensorflow.keras import layers
-from keras.utils import to_categorical
+from tensorflow.keras.utils import to_categorical
 from tensorflow.keras.layers import BatchNormalization
-from keras.models import Model
-from keras.layers import Dense, Dropout, Activation, BatchNormalization, Flatten
-from keras.callbacks import ModelCheckpoint, ReduceLROnPlateau
-from keras.optimizers import Adam
+from tensorflow.keras.models import Model
+from tensorflow.keras.layers import Dense, Dropout, Activation, BatchNormalization, Flatten
+from tensorflow.keras.callbacks import ModelCheckpoint, ReduceLROnPlateau
+
 import efficientnet.keras as enet
 from keras.backend import sigmoid
-from keras import optimizers
+
 from tensorflow_addons.losses import SigmoidFocalCrossEntropy
 # Some utilites
 import numpy as np
